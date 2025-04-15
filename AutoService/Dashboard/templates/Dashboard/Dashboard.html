@@ -1,0 +1,64 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+<link rel="stylesheet" href="{% static 'Dashboard/Dashboard.css' %}">
+{% endblock statics %}
+    
+{% block content %}
+<div class="contentLeft">
+
+    <div class="stafflist">
+        <div class="stafflistTitle">
+            Активные работники
+        </div>
+        <div class="Activestafflist">
+            {% for staff in ActiveStaff %}
+            <div class="ActiveStaffPlace" style=background-color:{{staff.color}};>
+                {{staff}}
+            </div>
+            {% endfor %}
+        </div>    
+    </div>
+    <div class="activeclients">
+        <div class="activeclientsTitle">
+            Клиенты в работе
+        </div>
+        <div class="activeclientsList">
+            {% for task in ActiveTasks %}
+                <div class="ActiveClientPlace">
+                    {{task.client}} <br> {{task.client.client_auto}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="contentRight">
+    <div class="dashboardblock">
+        <div class="dashboardTitle">
+            Активные работы       <a href="{% url "Dashboard:createtask" %}" class='createTask'>Создать Запись</a>    <a href="{% url "Dashboard:AllTask" %}" class='createTask'>Все записи</a>
+        </div>
+        <div class="dashboardcontent">
+            {% for task in ActiveTasks %}
+            <a class='taskholdersa' href="{% url "Dashboard:checkTask" task.id %}">
+                <div class="ActiveTaskPlace" style=background-color:{{task.staff.color}};>
+                    {{task.client}} <br>
+                    {{task.client.client_auto}} <br>
+                    {{task.staff}} <br>
+                    {{task.client.client_auto}} <br>
+                    {{task.works}} <br>
+                    Детали: <br>
+                    {% for prop in task.props.all %}
+                        {{prop}}<br>
+                    {% endfor %} 
+                    {{task.time}}
+                </div>
+            </a>
+            
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+{% endblock content %}

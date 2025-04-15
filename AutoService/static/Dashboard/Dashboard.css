@@ -1,0 +1,163 @@
+.contentLeft{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 300px;
+}
+
+.stafflist{
+    margin-top: 20px;
+    width:300px;
+    height: 300px;
+    background-color: #27293d;  
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+.stafflistTitle{
+    display: flex;
+    background-color: #27293d;
+    position: sticky;
+    width:300px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.activeclients{
+    margin-top: 20px;
+    width:300px;
+    height: 400px;
+    background-color: #27293d;
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+.activeclientsTitle{
+    display: flex;
+    background-color: #27293d;
+    position: sticky;
+    width:300px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.contentRight{
+    margin-left: 20px;
+    display: flex;
+    height: 100%;
+    width: 1050px;
+}
+
+.dashboardblock{
+    margin-top: 20px;
+    width:1050px;
+    height: 720px;
+    background-color: #27293d;  
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+.dashboardTitle{
+    display: flex;
+    background-color: #27293d;
+    position: sticky;
+    width:1050px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.dashboardcontent{
+    display: flex;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.createTask{
+    margin-left: 20px;
+    border: #2261a8 1px solid;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.createTask:hover{
+    background-color: #2261a8;
+}
+
+.ActiveTaskPlace{
+    color: rgb(42, 3, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    border: #2261a8 1px solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.activeclientsList{
+    height: 300px;
+    width: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+    background-color: #27293d;
+    padding: 10px;
+}
+
+.ActiveClientPlace{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    border: #2261a8 1px solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: larger;
+    margin-top: 10px;
+    background-color: #27293d;
+}
+
+.Activestafflist{
+    height: 300px;
+    background-color: #27293d;
+    padding: 10px;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+
+.ActiveStaffPlace{
+    color: rgb(42, 3, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    border: #2261a8 1px solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: larger;
+    margin-top: 10px;
+    background-color: #27293d;
+}
+
+a{
+    text-decoration: none;
+}

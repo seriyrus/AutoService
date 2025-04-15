@@ -1,0 +1,37 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+<link rel="stylesheet" href="{% static 'Dashboard/checkTask.css' %}">
+{% endblock statics %}
+
+
+{% block content %}
+    <div class="checkTask">
+        <div class="CheckTaskForm">
+            <div class="CheckTaskFormTitle">
+                Редактировать запись
+            </div>
+            <div class="checkTaskFormForm">
+                <form method="POST" class="post">
+                    {% csrf_token %}
+                    {{ form1.as_p }}
+                    <button type="submit" class="save_btn">Сохранить</button>
+                </form>
+                <form method="POST" class="post">
+                    {% csrf_token %}
+                    {{ form2.as_p }}
+                    <button type="submit" class="save_btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+    </div>
+        
+{% endblock content %}

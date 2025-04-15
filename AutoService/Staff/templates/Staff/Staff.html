@@ -1,0 +1,40 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+    <link rel="stylesheet" href="{% static 'Staff\Staff.css' %}">
+{% endblock statics %}
+
+{% block content %}
+    <div class="topMenu">
+        <div class="TopLeft">
+            <div class="staffTable">
+                <div class="StaffTableTitle">
+                    Сотрудники
+                </div>
+                <div class="StaffTableList">
+                    {% for staff in StaffList %}
+                    <div class="staffPlace" style=background-color:{{staff.color}};>
+                        {{staff.staff_job}} {{staff.staff_name}} {{staff.staff_surname}}
+                    </div>
+                       
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="TopRight">
+            <div class="CreateStaffForm">
+                <div class="CreateStaffFormTitle">
+                    Добавить Сотрудника
+                </div>
+                <div class="createStaffFormForm">
+                    <form method="POST" class="post">{% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="save_btn">Сохранить</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="{% static "Staff/jscolor.js" %}"></script>        
+{% endblock content %}

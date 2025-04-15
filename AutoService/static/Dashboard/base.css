@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d2a;
+}
+
+.DashboardSidebar{
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(153,28,209,1) 40%, rgb(170, 38, 98) 100%);
+    box-shadow: blueviolet 0 0 15px 0;
+}
+
+.content{
+    display: flex;
+    margin-left: 120px;
+}
+
+.sidebarcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+}
+
+.home{
+    margin-top: 10px;
+    background:none ;
+}
+a{
+    background: none;   
+}
+
+i{
+    font-size: 48px;
+    color:#dcd5d5;
+    background: none;
+    transition:#b3acac .5s ease-in-out;
+}
+
+i:hover{
+    color:#b3acac;
+    font-size: 64px;
+}
+
+.dashboardcontent{
+    background-color: #27293d;
+    margin: 10px;
+    width: 1030px;
+    height: 650px;
+}
+
+
+.staff{
+    margin-top: 10px;
+    background: none;
+}
+
+.clients{
+    margin-top: 10px;
+    background: none;
+}
+
+.property{
+    margin-top: 10px;
+    background: none;
+}
+
+.documents{
+    margin-top: 10px;
+    background: none;
+}
+
+.schedule{
+    margin-top: 10px;
+    background: none;
+}
+
+.order{
+    margin-top: 10px;
+    background: none;
+}

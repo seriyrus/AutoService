@@ -1,0 +1,117 @@
+.PropertyContent{
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SearchBlock{
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #27293d;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+}
+
+.PropertyBlock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.AllProp{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #27293d;
+    margin: 10px;
+    width: 70%;
+    height: 600px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.CreateProp{
+    margin: 10px;
+    display: flex;
+    background-color: #27293d;
+    width: 30%;
+    height: 400px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.propPlace{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    background-color: #27293d;
+}
+
+.CreatePropForm{
+    margin-left: 10px;
+    padding: 10px;
+    color:rgb(231, 226, 226);
+    background-color: #27293d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.CreatePropFormName{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreatePropFormCost{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreatePropFormCol{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.save_btn{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+p{
+    margin-bottom: 10px;
+    background-color: #27293d;
+}
+label{
+    background-color: #27293d;
+}

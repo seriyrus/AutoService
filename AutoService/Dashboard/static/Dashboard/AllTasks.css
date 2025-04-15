@@ -1,0 +1,208 @@
+.Tasksblock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.FiltersBlock{
+    margin-left: 100px;
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #27293d;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+}
+
+p{
+    background-color: #27293d;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+}
+
+label{
+    background-color: #27293d;
+}
+
+select{
+    margin-right: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+.FilterWorks{
+    background-color: #27293d;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.post{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #27293d;
+}
+
+.ListsBlock{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 600px;
+}
+
+.CreatedTasks{
+    background-color: #27293d;
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+}
+
+.CreatedTasksBlock{
+    background-color: #27293d;
+    height: 550px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.ActiveTasks{
+    background-color: #27293d;
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+}
+
+.ActiveTaskBlock{
+    background-color: #27293d;
+    height: 550px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.CompleteTasks{
+    background-color: #27293d;
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-direction: row;
+}
+
+.CompletedTaskBlock{
+    background-color: #27293d;
+    height: 550px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.taskPlaceholder{
+    margin: 10px;
+    border: #2261a8 3px solid;
+    border-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 10px;
+}
+
+.CompleteTitle{
+    background-color: #27293d;
+    display: flex ;
+    width: 100%;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.ActiveTitle{
+    background-color: #27293d;
+    display: flex ;
+    width: 100%;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.CreatedTitle{
+    background-color: #27293d;
+    display: flex ;
+    width: 100%;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.save_btn{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}

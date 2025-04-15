@@ -1,0 +1,38 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+    <link rel="stylesheet" href="{% static 'clients\clients.css' %}">
+{% endblock statics %}
+
+{% block content %}
+    <div class="blockCliets">
+        <div class="ClientsList">
+            <div class="ClientsListTitle">
+                Клиенты
+            </div>
+            <div class="ClientsLists">
+                {% for client in ClientList %}
+                    <div class="clientPlace">
+                        {{client.client_surname}} {{client.client_name}} {{client.client_fathername}} <br>
+                        {{client.client_phone}}<br>
+                        {{client.client_auto}} 
+                    </div>
+                       
+                {% endfor %}
+            </div>
+        </div>
+        <div class="CrateClientFormPlace">
+            <div class="ClientFormTitle">
+                Добавить клиента
+            </div>
+            <div class="ClientForm">
+                <form method="POST" class="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="save_btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

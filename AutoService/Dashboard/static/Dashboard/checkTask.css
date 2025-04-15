@@ -1,0 +1,132 @@
+.CheckTaskForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width:500px;
+    height: 700px;
+    background-color: #27293d;  
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+    padding: 0%;
+}
+
+.checkTask{
+    margin-top: 20px;
+}
+
+.CheckTaskFormTitle{
+    display: flex;
+    background-color: #27293d;
+    width:500px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.checkTaskFormForm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #27293d;
+}
+
+.post{
+    height: 450px;
+    border-radius: 20px;
+    padding:10px;
+    margin-top: 20px;
+    background-color: #27293d; 
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:self-start;
+}
+
+.save_btn{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.countform{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+p{
+    margin-bottom: 10px;
+    background-color: #27293d;
+}
+label{
+    background-color: #27293d;
+}
+
+.Staff{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+.Client{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+.Price{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+select{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+select{
+    background-color: #27293d;
+}
+
+.Works{
+    background-color: #27293d;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    height: 100px;
+}

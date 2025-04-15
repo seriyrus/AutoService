@@ -1,0 +1,46 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+    <link rel="stylesheet" href="{% static 'Property\Property.css' %}">
+{% endblock statics %}
+
+{% block content %}
+    <div class="PropertyContent">
+        <div class="SearchBlock">
+            <div class="PropFilters">
+                <form method='POST' class='PropFiltersForm'>
+                    {% csrf_token %}
+                    {{FiltersForm.as_p}}
+                    <button type="submit" class="save_btn">Поиск</button>
+                </form>
+            </div>
+        </div>
+        <div class="PropertyBlock">
+            <div class="AllProp">
+                {% for prop in props %}
+                    <div class="propPlace" >
+                        {{prop.prop_name}}<br>
+                        Стоимость: {{prop.prop_cost}}<br>
+                        Количество: {{prop.prop_col}}<br>
+                        Общая стоимость: {{prop.prop_allcost}}<br>
+                        место на складе: {{prop.prop_position}}
+                    </div>
+                       
+                    {% endfor %}
+            </div>
+            <div class="CreateProp">
+                <div class="CreatePropTitle">
+                    Добавить предмет
+                </div>
+                <div class="CreatePropBody">
+                    <form method="POST" class = 'CreatePropForm'>
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button type="submit" class="save_btn">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

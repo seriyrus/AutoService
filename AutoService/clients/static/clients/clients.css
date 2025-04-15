@@ -1,0 +1,174 @@
+.blockCliets{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.ClientsList{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 700px;
+    margin: 20px;
+    background-color: #27293d;
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+.ClientsListTitle{
+    width: 900px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    background-color: #27293d; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.ClientsLists{
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 900px;
+    background-color: #27293d; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+.CrateClientFormPlace{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+    background-color: #27293d;
+    border-radius: 20px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+.ClientFormTitle{
+    width: 450px;
+    height: 50px;
+    border-bottom: #2261a8 3px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: rgb(231, 226, 226);
+    background-color: #27293d; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.ClientForm{
+    background-color: #27293d; 
+}
+.post{
+    padding:10px;
+    margin-top: 20px;
+    background-color: #27293d; 
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:self-start;
+}
+
+.save_btn{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+p{
+    margin-bottom: 10px;
+    background-color: #27293d;
+}
+label{
+    background-color: #27293d;
+}
+
+.CreateClientFormName{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreateClientFormSurname{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreateClientFormFathername{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreateClientFormPhone{
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+.CreateClientFormAuto{
+    width: 400px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    background-color: #27293d;
+    padding: 5px 10px 5px 10px;
+}
+
+.ClientsLists{
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    align-content: start;
+}
+
+.clientPlace{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    color: rgb(231, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    background-color: #27293d;
+    border-radius: 10px;
+    box-shadow: blueviolet 0 0 5px 0 ;
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}

@@ -1,0 +1,72 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+<link rel="stylesheet" href="{% static 'Dashboard/AllTasks.css' %}">
+{% endblock statics %}
+
+
+{% block content %}
+    <div class="Tasksblock">
+        <div class="FiltersBlock">
+            <form method="POST" class='post'>
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="save_btn">Поиск</button>
+            </form>
+        </div>
+        <div class="ListsBlock">
+            <div class="CreatedTasks">
+                <div class="CreatedTitle">
+                    Созданные
+                </div>
+                <div class="CreatedTasksBlock">
+                    {% for task in tasks %}
+                    {% if task.mode == "created" %}
+                    <a href="{% url "Dashboard:checkTask" task.id %}">
+                        <div class="taskPlaceholder">
+                            {{task.client}} <br> {{task.staff}} <br> {{task.works}} <br> {{task.time}}
+                        </div>
+                    </a>
+                    {% endif %}
+                {% endfor %}
+                </div>
+                
+            </div>
+            <div class="ActiveTasks">
+                <div class="ActiveTitle">
+                    Активные
+                </div>
+                <div class="ActiveTaskBlock">
+                    {% for task in tasks %}
+                    {% if task.mode == "active" %}
+                    <a href="{% url "Dashboard:checkTask" task.id %}">
+                        <div class="taskPlaceholder">
+                            {{task.client}} <br> {{task.staff}} <br> {{task.works}} <br> {{task.time}}
+                        </div>
+                    </a>
+                    {% endif %}
+                {% endfor %}
+                </div>
+                
+            </div>
+            <div class="CompleteTasks">
+                <div class="CompleteTitle">
+                    Завершенные
+                </div>
+                <div class="CompletedTaskBlock">
+                    {% for task in tasks %}
+                    {% if task.mode == "complete" %}
+                    <a href="{% url "Dashboard:checkTask" task.id %}">
+                        <div class="taskPlaceholder">
+                            {{task.client}} <br> {{task.staff}} <br> {{task.works}} <br> {{task.time}}
+                        </div>
+                    </a>
+                    {% endif %}
+                {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}

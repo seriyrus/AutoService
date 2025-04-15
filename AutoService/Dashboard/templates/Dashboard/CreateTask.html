@@ -1,0 +1,25 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block statics %}
+<link rel="stylesheet" href="{% static 'Dashboard/createTask.css' %}">
+{% endblock statics %}
+
+
+{% block content %}
+    <div class="CreateTask">
+        <div class="CreateTaskForm">
+            <div class="CreateTaskFormTitle">
+                Создать запись
+            </div>
+            <div class="createTaskFormForm">
+                <form method="POST" class="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="save_btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+{% endblock content %}
