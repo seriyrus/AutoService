@@ -2,6 +2,7 @@ from django import forms
 from .models import Tasks, PropertyTasks
 from Staff.models import Staffs
 from clients.models import Clients
+from Property.models import Property
 
 class CreateTaskForm(forms.ModelForm):
     staff = forms.ModelChoiceField(label="Сотрудник", queryset=Staffs.objects.all())
@@ -24,7 +25,9 @@ class TaskFilters(forms.ModelForm):
         
         
 class PropertyTasksForm(forms.ModelForm):
+    Props = Property.objects.all()
     count = forms.CharField(label = "Количество ", max_length=5, widget=forms.TextInput(attrs={"class":"countform"}))
+    prop = forms.ModelChoiceField(label = "Детали ", queryset=Props) #""" , attrs={"class":"countform"})) """
     class Meta:
         model = PropertyTasks
         fields = "__all__"
